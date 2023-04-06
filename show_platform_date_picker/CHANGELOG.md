@@ -9,3 +9,7 @@
 ## 0.0.3		 
 
  - Example added
+
+## 0.0.4		 
+
+ - Updated Package info
