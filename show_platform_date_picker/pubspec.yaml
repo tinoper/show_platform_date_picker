@@ -1,6 +1,6 @@
 name: show_platform_date_picker
 description: Mnimalist wrapper around the showDatePicker and CupertinoDatePicker methods.
-version: 0.0.4
+version: 0.0.5
 homepage: https://responsivehelp.com
 repository: https://github.com/tinoper/show_platform_date_picker/tree/main/show_platform_date_picker
 issue_tracker: https://github.com/tinoper/show_platform_date_picker/issues

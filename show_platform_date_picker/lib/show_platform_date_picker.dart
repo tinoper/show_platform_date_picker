@@ -56,7 +56,8 @@ class ShowPlatformDatePicker {
         lastDate: lastDate,
         builder: (BuildContext context, Widget? child) {
           return Theme(
-            data: ThemeData.light(), // ajustar según el tema de tu aplicación
+            data: Theme.of(
+                buildContext), // ajustar según el tema de tu aplicación
             child: child!,
           );
         },

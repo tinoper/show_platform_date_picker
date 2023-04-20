@@ -14,7 +14,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Platform Date Picker',
       theme: ThemeData(
-        primarySwatch: Colors.deepPurple,
+        useMaterial3: true,
+        colorSchemeSeed: Colors.deepPurple,
       ),
       home: const MyHomePage(title: 'Agnostic Date Picker'),
     );
