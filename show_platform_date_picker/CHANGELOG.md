@@ -13,3 +13,7 @@
 ## 0.0.4		 
 
  - Updated Package info
+
+## 0.0.5		 
+
+ - Android calendar takes App Theme from buildContext 

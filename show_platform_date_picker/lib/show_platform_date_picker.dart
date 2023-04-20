@@ -34,7 +34,7 @@ class ShowPlatformDatePicker {
       await showCupertinoModalPopup<DateTime>(
         context: context,
         builder: (BuildContext context) {
-          return Container(
+          return SizedBox(
             height: 300,
             child: CupertinoDatePicker(
               mode: CupertinoDatePickerMode.date,
