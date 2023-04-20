@@ -13,8 +13,9 @@ By using a wrapper like `PlatformDatePicker`, developers can simplify the proces
 ## Features
 
   
- - [x] Show date Cupertino (iOS) style picker
- - [x] Show date Material Design(Android) style picker
+ ✅ Show date Cupertino (iOS) style picker
+ 
+ ✅ Show date Material Design(Android) style picker
 
   
 ## Usage  
@@ -33,3 +34,5 @@ final  newSelectedDateTime = await  platformDatePicker
 	);
 
 ```
+
+
