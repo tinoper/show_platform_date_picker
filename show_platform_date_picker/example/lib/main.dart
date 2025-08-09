@@ -13,10 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Platform Date Picker',
-      theme: ThemeData(
-        useMaterial3: true,
-        colorSchemeSeed: Colors.deepPurple,
-      ),
+      theme: ThemeData(useMaterial3: true, colorSchemeSeed: Colors.deepPurple),
       home: const MyHomePage(title: 'Agnostic Date Picker'),
     );
   }
@@ -36,30 +33,30 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    final ShowPlatformDatePicker platformDatePicker =
-        ShowPlatformDatePicker(buildContext: context);
+    final ShowPlatformDatePicker platformDatePicker = ShowPlatformDatePicker(
+      buildContext: context,
+    );
     return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
+      appBar: AppBar(title: Text(widget.title)),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             TextButton(
-                onPressed: () async {
-                  final newSelectedDateTime =
-                      await platformDatePicker.showPlatformDatePicker(
-                    context,
-                    selectedDate,
-                    DateTime(1900),
-                    DateTime.now().add(Duration(days: 3650)),
-                  );
-                  setState(() {
-                    selectedDate = newSelectedDateTime ?? DateTime.now();
-                  });
-                },
-                child: Text('Date: $selectedDate')),
+              onPressed: () async {
+                final newSelectedDateTime = await platformDatePicker
+                    .showPlatformDatePicker(
+                      context,
+                      selectedDate,
+                      DateTime(1900),
+                      DateTime.now().add(Duration(days: 3650)),
+                    );
+                setState(() {
+                  selectedDate = newSelectedDateTime ?? DateTime.now();
+                });
+              },
+              child: Text('Date: $selectedDate'),
+            ),
           ],
         ),
       ),
