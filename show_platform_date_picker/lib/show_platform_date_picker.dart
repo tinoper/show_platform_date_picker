@@ -15,11 +15,12 @@ class ShowPlatformDatePicker {
   final DateTime? firstDate;
   final DateTime? lastDate;
 
-  ShowPlatformDatePicker(
-      {required this.buildContext,
-      this.initialDate,
-      this.firstDate,
-      this.lastDate});
+  ShowPlatformDatePicker({
+    required this.buildContext,
+    this.initialDate,
+    this.firstDate,
+    this.lastDate,
+  });
 
   ///
   Future<DateTime?> showPlatformDatePicker(
@@ -55,11 +56,7 @@ class ShowPlatformDatePicker {
         firstDate: firstDate,
         lastDate: lastDate,
         builder: (BuildContext context, Widget? child) {
-          return Theme(
-            data: Theme.of(
-                buildContext), // ajustar según el tema de tu aplicación
-            child: child!,
-          );
+          return Theme(data: Theme.of(buildContext), child: child!);
         },
       );
     }
