@@ -1,5 +1,7 @@
 ## 0.0.6
  - Add improvement example
+ - Update Flutter to v3.35.0 and Dart 3.9.0'
+ - Update Flutter Lints version
 
 ## 0.0.5		 
  - Android calendar takes App Theme from buildContext 
